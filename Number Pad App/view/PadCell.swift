@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PadCell: UICollectionViewCell {
+class PadCell: BaseCell {
     
     let digitalLabel:UILabel = {
         let la = UILabel()
@@ -30,21 +30,9 @@ class PadCell: UICollectionViewCell {
             letterLabel.textColor = isHighlighted ? .white : .black
         }
     }
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        backgroundColor = UIColor(white: 0.95, alpha: 1)
-        setupViews()
-    }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        layer.cornerRadius = frame.width / 2
-    }
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
-    func setupViews()  {
+    override func setupViews()  {
         let stacks = UIStackView(arrangedSubviews: [digitalLabel,letterLabel])
         stacks.axis = .vertical
         
