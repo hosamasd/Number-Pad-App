@@ -12,6 +12,9 @@
 		4E84A5E82268B8F2000F829F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E84A5E62268B8F2000F829F /* Main.storyboard */; };
 		4E84A5EA2268B8F3000F829F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E84A5E92268B8F3000F829F /* Assets.xcassets */; };
 		4E84A5ED2268B8F3000F829F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E84A5EB2268B8F3000F829F /* LaunchScreen.storyboard */; };
+		4E84A5F82268B9A9000F829F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E84A5F72268B9A9000F829F /* MainVC.swift */; };
+		4E84A5FA2268BD33000F829F /* PadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E84A5F92268BD33000F829F /* PadCell.swift */; };
+		4E84A5FE2268BF74000F829F /* ExtensionUivew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E84A5FD2268BF74000F829F /* ExtensionUivew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		4E84A5E92268B8F3000F829F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E84A5EC2268B8F3000F829F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E84A5EE2268B8F3000F829F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E84A5F72268B9A9000F829F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		4E84A5F92268BD33000F829F /* PadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadCell.swift; sourceTree = "<group>"; };
+		4E84A5FD2268BF74000F829F /* ExtensionUivew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUivew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				4E84A5E22268B8F2000F829F /* AppDelegate.swift */,
-				4E84A5E42268B8F2000F829F /* ViewController.swift */,
+				4E84A5F52268B91A000F829F /* model */,
+				4E84A5F62268B920000F829F /* view */,
+				4E84A5F42268B902000F829F /* controller */,
 				4E84A5E62268B8F2000F829F /* Main.storyboard */,
 				4E84A5E92268B8F3000F829F /* Assets.xcassets */,
 				4E84A5EB2268B8F3000F829F /* LaunchScreen.storyboard */,
 				4E84A5EE2268B8F3000F829F /* Info.plist */,
+				4E84A5FD2268BF74000F829F /* ExtensionUivew.swift */,
 			);
 			path = "Number Pad App";
+			sourceTree = "<group>";
+		};
+		4E84A5F42268B902000F829F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				4E84A5E42268B8F2000F829F /* ViewController.swift */,
+				4E84A5F72268B9A9000F829F /* MainVC.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		4E84A5F52268B91A000F829F /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4E84A5F62268B920000F829F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4E84A5F92268BD33000F829F /* PadCell.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E84A5E52268B8F2000F829F /* ViewController.swift in Sources */,
+				4E84A5FE2268BF74000F829F /* ExtensionUivew.swift in Sources */,
+				4E84A5FA2268BD33000F829F /* PadCell.swift in Sources */,
+				4E84A5F82268B9A9000F829F /* MainVC.swift in Sources */,
 				4E84A5E32268B8F2000F829F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
