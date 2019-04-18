@@ -23,6 +23,13 @@ class PadCell: UICollectionViewCell {
         return la
     }()
     
+    override var isHighlighted: Bool {
+        didSet{
+            backgroundColor = isHighlighted ? .darkGray : UIColor(white: 0.95, alpha: 1)
+            digitalLabel.textColor = isHighlighted ? .white : .black
+            letterLabel.textColor = isHighlighted ? .white : .black
+        }
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = UIColor(white: 0.95, alpha: 1)
